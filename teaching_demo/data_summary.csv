@@ -5,6 +5,8 @@ verify_native,1PGA_ESMFold,protein G B1 (56 aa),56,ESMFold,experimental,100,88.3
 verify_native,1UBQ_ESMFold,ubiquitin (76 aa),76,ESMFold,experimental,100,90.5,,0.83,0.954,76,self-consistent,
 verify_native,1L2Y_ColabFold,Trp-cage (20 aa),20,ColabFold(AF2),experimental,100,94.9,0.13,0.69,0.499,20,self-consistent,
 verify_native,1VII_ColabFold,villin HP36 (36 aa),36,ColabFold(AF2),experimental,100,87.6,0.5,2.18,0.593,36,borderline,
+verify_native,1PGA_ColabFold,protein G B1 (56 aa),56,ColabFold(AF2),experimental,100,96.8,0.81,0.29,0.987,56,self-consistent,
+verify_native,1UBQ_ColabFold,ubiquitin (76 aa),76,ColabFold(AF2),experimental,100,95.9,0.84,0.8,0.959,76,self-consistent,
 generate_verify,1L2Y_design1,Trp-cage (20 aa),20,ESMFold,native_fold,40,90.7,,0.53,0.612,20,self-consistent,
 generate_verify,1L2Y_design2,Trp-cage (20 aa),20,ESMFold,native_fold,40,90.6,,0.58,0.569,20,self-consistent,
 generate_verify,1VII_design1,villin HP36 (36 aa),36,ESMFold,native_fold,25,75.6,,2.95,0.483,36,borderline,

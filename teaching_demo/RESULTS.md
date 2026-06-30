@@ -48,16 +48,25 @@ single-sequence vs MSA-based difference:
 
 | PDB | protein | ESMFold pLDDT | ESMFold CA-RMSD | AF2 (ColabFold) pLDDT | AF2 pTM | AF2 CA-RMSD |
 |---|---|---|---|---|---|---|
-| 1L2Y | Trp-cage (20 aa) | 91.1 | 0.51 Å | _pending CPU run_ | _–_ | _–_ |
-| 1VII | villin HP36 (36 aa) | 92.1 | **2.12 Å** | _pending_ | _–_ | _–_ |
-| 1PGA | protein G B1 (56 aa) | 88.3 | 0.49 Å | _pending_ | _–_ | _–_ |
-| 1UBQ | ubiquitin (76 aa) | 90.5 | 0.83 Å | _pending_ | _–_ | _–_ |
+| 1L2Y | Trp-cage (20 aa) | 91.1 | 0.51 Å | 94.9 | 0.13ᵃ | 0.69 Å |
+| 1VII | villin HP36 (36 aa) | 92.1 | **2.12 Å** | 87.6 | 0.50 | **2.18 Å** |
+| 1PGA | protein G B1 (56 aa) | 88.3 | 0.49 Å | 96.8 | 0.81 | 0.29 Å |
+| 1UBQ | ubiquitin (76 aa) | 90.5 | 0.83 Å | 95.9 | 0.84 | 0.80 Å |
+
+<sub>ᵃ pTM (like TM-score) is undefined-in-spirit for very short chains; AF2's own pTM for the
+20-aa Trp-cage is 0.13 despite pLDDT 94.9 — read pLDDT for tiny proteins, not pTM.</sub>
 
 **Reading (deliberately bounded):** on these four small (≤76 aa) single-domain proteins,
-both predictors recover the experimental fold at high confidence — **except 1VII, whose
-CA-RMSD is already 2.12 Å** (a frayed-terminus helical bundle is genuinely harder). With
-*n = 4* over a narrow size range, this establishes only that the predictors are *usable
-verifiers at this scale*; it is **not** a general accuracy claim.
+both predictors recover the experimental fold at high confidence. Three observations a
+student can take straight from the two columns:
+- **1VII is the hard case for *both* predictors** (ESMFold 2.12 Å, AF2 2.18 Å), and AF2
+  *correctly* lowers its own confidence there (pLDDT 87.6, its lowest of the four). So the
+  borderline result is a property of this frayed-terminus helical bundle, not a quirk of
+  one model — independent confirmation, not a defect to hide.
+- **MSA helps where homologs exist:** on protein G B1, MSA-based AF2 reaches 0.29 Å vs
+  single-sequence ESMFold's 0.49 Å — a concrete "single-sequence vs MSA" teaching contrast.
+- With *n = 4* over a narrow size range, this establishes only that the predictors are
+  *usable verifiers at this scale*; it is **not** a general accuracy claim.
 
 ## 3. Steps 1–3 — the generate→verify loop (redesign)
 
