@@ -1,0 +1,6 @@
+>1PGA, score=1.2079, global_score=1.2079, fixed_chains=[], designed_chains=['A'], model_name=v_48_020, git_hash=unknown, seed=37
+MTYKLILNGKTLKGETTTEAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE
+>T=0.1, sample=1, score=0.8307, global_score=0.8307, seq_recovery=0.6250
+PTYTLVINGKTVKGTTTTEAKNAAEAEKQFTAYCASIGVNGTWTFDPSTKTFTVTE
+>T=0.1, sample=2, score=0.7941, global_score=0.7941, seq_recovery=0.5536
+ATYTLVINGKTVTGTTTTTAANAAEAKAQFTALAAAKGINGTWTYDPATKTFTITE

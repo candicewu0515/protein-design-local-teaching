@@ -1,0 +1,17 @@
+# Environments & package caches (multi-GB, never commit)
+envs/
+.pixi-cache/
+.pixi-bin/
+.conda-pkgs/
+
+# Cloned upstream tool repos & model weights (multi-GB)
+protein_model_tools/
+
+# Other working documents not part of this deliverable
+hackathon_innov/
+protein_ai_teaching_background.md
+老师给我讲的.txt
+
+# OS cruft
+.DS_Store
+**/.DS_Store
