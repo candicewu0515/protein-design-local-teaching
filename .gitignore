@@ -7,8 +7,10 @@ envs/
 # Cloned upstream tool repos & model weights (multi-GB)
 protein_model_tools/
 
-# Other working documents not part of this deliverable
-hackathon_innov/
+# Local-only: manuscript alt-versions, hackathon source docs, personal report
+manuscripts/
+hackathon/
+报告_PhD级_中文.md
 protein_ai_teaching_background.md
 老师给我讲的.txt
 
