@@ -15,3 +15,7 @@ protein_ai_teaching_background.md
 # OS cruft
 .DS_Store
 **/.DS_Store
+
+# Python bytecode cache
+__pycache__/
+*.pyc
