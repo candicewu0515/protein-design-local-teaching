@@ -38,9 +38,13 @@ Modern de novo design is a three-step loop, and each step maps to a distinct, te
 
 ### The teachable centerpiece: in silico self-consistency
 
-The conceptual heart of the module is the **self-consistency (designability) screen**, a widely used in silico proxy for "is this design likely to fold?" [1]. The loop is compact and entirely assessable:
+The conceptual heart of the module is the **self-consistency (designability) screen**, a widely used in silico proxy for "is this design likely to fold?" [1]. The loop is compact and entirely assessable (Figure 1):
 
 > backbone (RFdiffusion) → N candidate sequences (ProteinMPNN) → re-predict each structure (ESMFold) → compare back to the original backbone.
+
+![The generate, then verify teaching loop](teaching_demo/figures/workflow_diagram.png)
+
+**Figure 1. The "generate, then verify" teaching loop.** Generative models make a protein—RFdiffusion turns noise into a backbone and ProteinMPNN designs a sequence for that backbone—and an independently trained predictive model (ESMFold, or AlphaFold2) folds the sequence back. The design is then scored by an in silico self-consistency check: does the predicted structure return to the target backbone (low Cα-RMSD) with high per-residue confidence (pLDDT)? The check is informative precisely because the validator is trained independently of the generator (orthogonality). Generation ("make a protein") and prediction ("read a protein") are the two complementary halves of AI protein science that this module makes concrete. *Pass/fail thresholds in the figure are illustrative; the classroom rubric used here is given in the text.*
 
 Two numbers summarize the outcome:
 
