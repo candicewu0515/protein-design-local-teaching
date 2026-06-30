@@ -24,3 +24,6 @@ protein_ai_teaching_background.md
 # Python bytecode cache
 __pycache__/
 *.pyc
+
+# Slide decks (keep local)
+*.pptx
