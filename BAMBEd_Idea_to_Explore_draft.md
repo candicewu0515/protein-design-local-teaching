@@ -126,6 +126,14 @@ As an idea to explore, this module has not yet been formally assessed. We propos
 
 Generative protein design is becoming core content in molecular bioscience education, but teaching it through opaque cloud notebooks trades understanding and access for convenience. We offer, as an idea to explore, a low-resource local workflow that runs the complete generate–design–validate loop on consumer laptop-class hardware and makes its own success criterion computable by students. By relocating the computation to a machine students can see and control, the module turns the constraints of real hardware—and the discipline of an in silico success metric—into the lesson itself. We invite instructors to adopt, stress-test, and assess it.
 
+## Data and code availability
+
+All scripts, inputs, outputs, the worked-example results table, and the supplementary student
+handout (S1) and instructor guide (S2) are openly available at
+https://github.com/candicewu0515/protein-design-local-teaching. Code is released under the MIT
+License and written materials under CC BY 4.0. Software versions, commits, commands, and metric
+definitions are recorded in `teaching_demo/METHODS_AND_REPRODUCIBILITY.md`.
+
 ## References
 
 1. Watson JL, Juergens D, Bennett NR, et al. De novo design of protein structure and function with RFdiffusion. *Nature*. 2023;620:1089–1100. doi:10.1038/s41586-023-06415-8

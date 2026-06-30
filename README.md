@@ -20,6 +20,13 @@ abstract question *"did the design work?"* into a calculation.
   (*Biochemistry and Molecular Biology Education*, "An Idea to Explore" format).
 - [`submission_notes_and_pitch.md`](submission_notes_and_pitch.md) — submission checklist and
   working notes.
+- [`supplementary/`](supplementary/) — teaching materials:
+  [`S1_student_handout.md`](supplementary/S1_student_handout.md) (rubric + worksheet) and
+  [`S2_instructor_guide.md`](supplementary/S2_instructor_guide.md) (timeline, objective
+  mapping, common failure modes).
+- [`protein_model_tools/`](protein_model_tools/) — small pipeline wrapper scripts
+  (`run_*.sh`, `run_esmfold.py`, `rfdiff_cpu_shim.py`). The large upstream tool repos and
+  model weights are **not** included.
 - [`teaching_demo/`](teaching_demo/) — the worked example: scripts, inputs, outputs, figures,
   and a machine-readable results table.
   - [`teaching_demo/RESULTS.md`](teaching_demo/RESULTS.md) — narrated results with teaching points.
