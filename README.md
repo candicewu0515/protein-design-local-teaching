@@ -19,7 +19,7 @@ abstract question *"did the design work?"* into a calculation.
 - [`BAMBEd_Idea_to_Explore_draft.md`](BAMBEd_Idea_to_Explore_draft.md) — the manuscript
   (*Biochemistry and Molecular Biology Education*, "An Idea to Explore" format).
 - [`submission_notes_and_pitch.md`](submission_notes_and_pitch.md) — submission checklist and
-  editor pitch (working notes).
+  working notes.
 - [`teaching_demo/`](teaching_demo/) — the worked example: scripts, inputs, outputs, figures,
   and a machine-readable results table.
   - [`teaching_demo/RESULTS.md`](teaching_demo/RESULTS.md) — narrated results with teaching points.
