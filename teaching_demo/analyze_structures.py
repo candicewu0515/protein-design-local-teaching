@@ -186,10 +186,10 @@ for pid, (name, ref) in PROT.items():
             'native_fold', ref, sid, f'esmfold_designed/{did}.pdb')
 
 # ---- denovo_verify: RFdiffusion backbone -> MPNN -> ESMFold vs that backbone ----
-for k in (1, 2):
-    add('denovo_verify', f'denovo_design{k}', 'de novo (30 aa)', 30, 'ESMFold',
-        'rfdiff_backbone', 'rfdiff_out/denovo_0.pdb', None,
-        f'esmfold_denovo/denovo_design{k}.pdb')
+for k in (1, 2, 3, 4):
+    add('denovo_verify', f'denovo80_design{k}', 'de novo (80 aa)', 80, 'ESMFold',
+        'rfdiff_backbone', 'rfdiff_out_80aa/denovo80_0.pdb', None,
+        f'esmfold_denovo80/denovo80_design{k}.pdb')
 
 
 # ---------- write ----------

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+  <style>
+    .card{fill:#fff;stroke:#dadce0;stroke-width:1.5;rx:8}
+    .lbl{fill:#5f6368;font-size:14px}
+    .box{fill:#fff;stroke:#bdc1c6;stroke-width:1.5;rx:5}
+    .val{fill:#202124;font-size:16px}
+    .ph{fill:#9aa0a6;font-size:15px;font-style:italic}
+    .fill{fill:#0b6b3a;font-size:16px;font-weight:700}
+    .note{fill:#e07b1a;font-size:14px;font-weight:600}
+    .arrow{stroke:#e07b1a;stroke-width:2;fill:none;marker-end:url(#ah)}
+    .title{fill:#202124;font-size:18px;font-weight:700}
+    .drop{fill:#5f6368;font-size:12px}
+  </style>
+  <defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#e07b1a"/></marker></defs>
+
+  <rect x="1" y="1" width="998" height="558" fill="#f8f9fa"/>
+  <!-- run button + title -->
+  <circle cx="34" cy="40" r="14" fill="none" stroke="#5f6368" stroke-width="1.5"/>
+  <path d="M29,33 L29,47 L42,40 z" fill="#5f6368"/>
+  <text x="62" y="46" class="title">run RFdiffusion to generate a backbone</text>
+  <text x="720" y="45" class="note">← Cell 2 · fill, then press ▶</text>
+
+  <!-- row 1: name / contigs / pdb -->
+  <text x="30" y="86" class="lbl">name</text>
+  <rect x="30" y="94" width="300" height="40" class="card" rx="5"/><text x="44" y="120" class="fill">denovo80</text>
+  <text x="350" y="86" class="lbl">contigs</text>
+  <rect x="350" y="94" width="300" height="40" fill="#fff7ec" stroke="#e07b1a" stroke-width="2.2" rx="5"/><text x="364" y="120" class="fill">80</text>
+  <text x="670" y="86" class="lbl">pdb</text>
+  <rect x="670" y="94" width="300" height="40" class="card" rx="5"/><text x="684" y="120" class="ph">leave empty (= de novo)</text>
+
+  <!-- callout on contigs -->
+  <path class="arrow" d="M500,175 C500,150 500,145 500,138"/>
+  <text x="360" y="200" class="note">contigs = the length. Type 80 for an 80-aa</text>
+  <text x="360" y="220" class="note">de novo chain. This is the ONE field that matters.</text>
+
+  <!-- row 2: iterations / hotspot / num_designs -->
+  <text x="30" y="262" class="lbl">iterations</text>
+  <rect x="30" y="270" width="300" height="40" class="card" rx="5"/><text x="44" y="296" class="val">50</text><text x="310" y="295" class="drop">▾</text>
+  <text x="350" y="262" class="lbl">hotspot</text>
+  <rect x="350" y="270" width="300" height="40" class="card" rx="5"/><text x="364" y="296" class="ph">leave empty</text>
+  <text x="670" y="262" class="lbl">num_designs</text>
+  <rect x="670" y="270" width="300" height="40" class="card" rx="5"/><text x="684" y="296" class="val">1</text><text x="950" y="295" class="drop">▾</text>
+
+  <!-- row 3: visual -->
+  <text x="30" y="338" class="lbl">visual</text>
+  <rect x="30" y="346" width="300" height="40" class="card" rx="5"/><text x="44" y="372" class="val">image</text><text x="310" y="371" class="drop">▾</text>
+
+  <!-- symmetry -->
+  <text x="30" y="424" class="title" font-size="16">symmetry settings</text>
+  <text x="30" y="456" class="lbl">symmetry</text>
+  <rect x="30" y="464" width="300" height="40" class="card" rx="5"/><text x="44" y="490" class="val">none</text><text x="310" y="489" class="drop">▾</text>
+  <text x="350" y="456" class="lbl">order</text>
+  <rect x="350" y="464" width="300" height="40" class="card" rx="5"/><text x="364" y="490" class="val">1</text>
+  <text x="670" y="456" class="lbl">chains</text>
+  <rect x="670" y="464" width="300" height="40" class="card" rx="5"/><text x="684" y="490" class="ph">leave empty</text>
+  <rect x="30" y="524" width="18" height="18" fill="#1a73e8" rx="3"/><path d="M34,533 l3,3 l6,-7" stroke="#fff" stroke-width="2" fill="none"/>
+  <text x="58" y="538" class="val" font-size="15">add_potential  (leave on)</text>
+  <text x="600" y="538" class="note">all default for a single de novo chain</text>
+</svg>

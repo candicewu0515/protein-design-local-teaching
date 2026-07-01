@@ -1,0 +1,5 @@
+id,mpnn_score,mean_pLDDT,CA_RMSD_A,TMscore,verdict
+denovo80_design1,1.14,90.3,0.62,0.965,self-consistent
+denovo80_design2,1.10,91.2,0.66,0.960,self-consistent
+denovo80_design3,1.07,89.3,0.69,0.958,self-consistent
+denovo80_design4,1.16,87.8,1.55,0.844,self-consistent

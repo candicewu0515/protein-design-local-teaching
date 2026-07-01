@@ -27,3 +27,6 @@ __pycache__/
 
 # Slide decks (keep local)
 *.pptx
+
+# MkDocs build output
+site/

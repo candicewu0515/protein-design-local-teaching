@@ -53,7 +53,7 @@ protein_model_tools/run_esmfold.sh   # -> teaching_demo/esmfold_out/, esmfold_de
 #     (driver in protein_model_tools/; designs -> teaching_demo/seqs/designed8.fasta)
 
 # --- RFdiffusion (de novo backbone), CPU via NVTX no-op shim ---
-protein_model_tools/run_rfdiffusion.sh   # uses rfdiff_cpu_shim.py; 30 aa, 50 steps (~0.77 min)
+protein_model_tools/run_rfdiffusion.sh   # 80 aa, 50 steps (~3.7 min on laptop CPU; ~40 s on free Colab T4)
 
 # --- ColabFold / AlphaFold2 on the 4 native sequences (this work) ---
 cd protein_model_tools
@@ -101,10 +101,10 @@ on Apple-Silicon CPU only after no-op'ing those calls — done non-invasively by
 | `esmfold_out/` | ESMFold predictions of native sequences |
 | `esmfold_designed/` | ESMFold predictions of ProteinMPNN redesigns |
 | `colabfold_native/` | ColabFold/AF2 predictions of native sequences (5 models each) |
-| `rfdiff_out/` | RFdiffusion de novo backbone (`denovo_0.pdb`) |
-| `denovo_mpnn/` | ProteinMPNN sequences for the de novo backbone |
-| `esmfold_denovo/` | ESMFold predictions of the de novo designs |
-| `seqs/` | `native4.fasta`, `designed8.fasta`, `denovo_designs.fasta` |
+| `rfdiff_out_80aa/` | RFdiffusion de novo backbone (`denovo80_0.pdb`) |
+| `denovo80_mpnn/` | ProteinMPNN sequences for the de novo backbone |
+| `esmfold_denovo80/` | ESMFold predictions of the de novo designs |
+| `seqs/` | `native4.fasta`, `designed8.fasta`, `denovo80_designs.fasta` |
 | `data_summary.csv` | **unified metrics table** (every claimed number) |
 | `analyze_structures.py` | regenerates `data_summary.csv` |
 | `make_figures.py` | overlay + scatter figures |

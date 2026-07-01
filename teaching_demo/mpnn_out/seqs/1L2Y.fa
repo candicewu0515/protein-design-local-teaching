@@ -1,6 +1,0 @@
->1L2Y, score=1.8909, global_score=1.8909, fixed_chains=[], designed_chains=['A'], model_name=v_48_020, git_hash=unknown, seed=37
-NLYIQWLKDGGPSSGRPPPS
->T=0.1, sample=1, score=1.2015, global_score=1.2015, seq_recovery=0.4000
-EALQEWLARGGAASGQPRPE
->T=0.1, sample=2, score=1.1964, global_score=1.1964, seq_recovery=0.4000
-EALQRWLARGGANSGEPRPV

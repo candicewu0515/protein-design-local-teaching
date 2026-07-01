@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+  <style>
+    .lbl{fill:#5f6368;font-size:14px}
+    .val{fill:#202124;font-size:16px}
+    .ph{fill:#9aa0a6;font-size:15px;font-style:italic}
+    .fill{fill:#0b6b3a;font-size:16px;font-weight:700}
+    .note{fill:#e07b1a;font-size:14px;font-weight:600}
+    .arrow{stroke:#e07b1a;stroke-width:2;fill:none}
+    .title{fill:#202124;font-size:18px;font-weight:700}
+    .drop{fill:#5f6368;font-size:12px}
+  </style>
+  <defs><marker id="ah2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#e07b1a"/></marker></defs>
+  <rect x="1" y="1" width="998" height="418" fill="#f8f9fa"/>
+  <circle cx="34" cy="38" r="14" fill="none" stroke="#5f6368" stroke-width="1.5"/>
+  <path d="M29,31 L29,45 L42,38 z" fill="#5f6368"/>
+  <text x="62" y="44" class="title">run ProteinMPNN (sequence) + AlphaFold (validate)</text>
+  <text x="720" y="43" class="note">← Cell 4 · design + verify</text>
+
+  <!-- row: num_seqs / mpnn_sampling_temp / rm_aa -->
+  <text x="30" y="92" class="lbl">num_seqs</text>
+  <rect x="30" y="100" width="300" height="40" fill="#fff7ec" stroke="#e07b1a" stroke-width="2.2" rx="5"/><text x="44" y="126" class="fill">4</text><text x="310" y="125" class="drop">▾</text>
+  <text x="350" y="92" class="lbl">mpnn_sampling_temp</text>
+  <rect x="350" y="100" width="300" height="40" fill="#fff7ec" stroke="#e07b1a" stroke-width="2.2" rx="5"/><text x="364" y="126" class="fill">0.1</text><text x="630" y="125" class="drop">▾</text>
+  <text x="670" y="92" class="lbl">rm_aa</text>
+  <rect x="670" y="100" width="300" height="40" class="card" fill="#fff" stroke="#bdc1c6" stroke-width="1.5" rx="5"/><text x="684" y="126" class="val">C</text>
+
+  <path class="arrow" d="M180,185 C180,160 180,155 180,144" marker-end="url(#ah2)"/>
+  <text x="40" y="208" class="note">how many sequences to</text>
+  <text x="40" y="228" class="note">design (make several)</text>
+  <path class="arrow" d="M500,185 C500,160 500,155 500,144" marker-end="url(#ah2)"/>
+  <text x="360" y="208" class="note">diversity — higher = more</text>
+  <text x="360" y="228" class="note">diverse; 0.1 = reliable</text>
+  <path class="arrow" d="M820,185 C820,160 820,155 820,144" marker-end="url(#ah2)"/>
+  <text x="700" y="208" class="note">C = no cysteines</text>
+
+  <!-- checkboxes -->
+  <rect x="30" y="270" width="18" height="18" fill="#fff" stroke="#5f6368" stroke-width="1.5" rx="3"/>
+  <text x="58" y="285" class="val" font-size="15">use_solubleMPNN   (leave off)</text>
+  <rect x="360" y="270" width="18" height="18" fill="#fff" stroke="#5f6368" stroke-width="1.5" rx="3"/>
+  <text x="388" y="285" class="val" font-size="15">initial_guess   (leave off)</text>
+
+  <text x="30" y="336" class="lbl">num_recycles</text>
+  <rect x="30" y="344" width="300" height="40" fill="#fff" stroke="#bdc1c6" stroke-width="1.5" rx="5"/><text x="44" y="370" class="val">1</text><text x="310" y="369" class="drop">▾</text>
+  <rect x="360" y="352" width="18" height="18" fill="#fff" stroke="#5f6368" stroke-width="1.5" rx="3"/>
+  <text x="388" y="367" class="val" font-size="15">use_multimer   (leave off)</text>
+  <text x="640" y="367" class="note">→ outputs pLDDT + Cα-RMSD per design</text>
+</svg>
